@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  scroll-behavior: smooth;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+button {
+  @apply rounded;
+}
+
+.contactInput{
+  @apply w-full h-12 rounded border-[1px] border-gray-600 px-4 active:outline-none focus-visible:outline-sky-600 outline-none focus-visible:border-b-transparent duration-300
+}
